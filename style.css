@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:serif
+}
+
+html, body {
+    background-image: linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgb(36, 3, 40) 88.7% );
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    position: fixed;
+    height: 90%;
+    width: 80%; /* default width for small screens */
+    /* background-color: rgba(228, 226, 226, 0.551); */
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 22%, #B5FFFC 100%);
+    
+    
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+/* Adjust for larger screens such as tablets and laptops */
+@media (min-width: 600px) {
+    #main {
+        width: 50%; /* Adjust width for tablet */
+    }
+}
+
+@media (min-width: 1024px) {
+    #main {
+        width: 30%; /* Adjust width for laptop */
+    }
+}
+
+nav {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    gap: 2px;
+}
+
+nav input, #option {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(166, 234, 207) 42%, rgba(92, 201, 238, 0.603) 93.6% );
+    color: rgb(0, 0, 0);
+    width: 75%;
+    height: 40px;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+    outline: none;
+
+}
+
+nav ::placeholder {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+nav button {
+    width: 40%;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #f0e2b4db;
+    color: rgb(0, 0, 0);
+}
+
+#block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    width: 100%;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+#gold-detail, #silver-detail {
+    height: 60%;
+    width: 90%;
+    padding: 10px;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+
+#gold-detail {
+    /* background-color: rgba(255, 217, 0, 0.297); */
+    background-image: linear-gradient(to right, #7d899c, #76939e, #7a9c98, #8ca190, #b5b59d);
+}
+
+#silver-detail {
+    /* background-color: rgba(186, 169, 107, 0.744); */
+    background-image: linear-gradient(to right, #7d899c, #76939e, #7a9c98, #a3b6a6, #dedec0);
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+#wellcome h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(0, 55, 65);
+    margin-top: 10px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#wellcome h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(29, 47, 41);
+    margin-top: 10px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+button:hover {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(166, 234, 207) 42%, rgba(92, 201, 238, 0.603) 93.6% );
+    color: rgb(0, 0, 0);
+    scale: 1.1;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+#head {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+#head img {
+    height: 100px;
+    width: 100px;
+}
+
+.message, .messages {
+    color: rgb(72, 36, 68);
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Media queries for mobile, tablets, and laptops */
+
+@media (max-width: 768px) {
+    #main {
+        width: 70%;
+    }
+    h2, h3, .message, .messages {
+        font-size: 18px; 
+    /* Scale down font for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #main {
+        width: 90%;
+    }
+    nav input, nav button, #option {
+        font-size: 14px;
+        height: 35px;
+    }
+    h2, h3 {
+        font-size: 16px;
+    }
+}
