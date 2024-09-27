@@ -1,6 +1,6 @@
 # Live Gold&Silver price tracker By Entering City Name 
 
-## i have hosted in netlify https://omsaijewellers.netlify.app/
+## I have hosted in netlify https://omsaijewellers.netlify.app/
 
 
 #Screen short![Screenshot 2024-09-25 221941](https://github.com/user-attachments/assets/1e73f656-b208-407e-b1c7-2eb881c47614)
